@@ -26,7 +26,7 @@ function App() {
   return (
   <div className="container">
     <input className="input" 
-           placeholder="Enter City... "
+           placeholder="Search City"
            onChange={e => setCity(e.target.value)}
            value={city}
            onKeyPress={getWeather}
