@@ -33,7 +33,7 @@ function App() {
            />
   {typeof weatherData.main === 'undefined' ?(
     <div>
-      <p className="welcome">Welcome to BACS Weather App. Please input a name of a city.</p>
+      <p className="welcome">Welcome to BACS Weather App. Please input a city name.</p>
     </div>
   ):
     <div className="weather-data">
