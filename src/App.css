@@ -59,8 +59,10 @@ margin-top: 3rem;
 
 body{
   background-image: url( '../src/images/weatherbackground.svg' );
-  background-repeat:repeat-x;
+ 
   background-size: cover;
+ 
+ 
   
 
 }
