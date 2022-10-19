@@ -6,9 +6,10 @@ function App() {
   const [weatherData, setWeatherData] = useState ([{}])
   const [city, setCity] = useState("")
  
+    
  
   const getWeather=(event)=>{
-    if (event.key == "Enter") {
+    if (event.key == "Enter"){
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`).then(
         response => response.json()
       ).then(
@@ -36,9 +37,10 @@ function App() {
       <p className="welcome">Welcome to BACS Weather App. Please input a city name.</p>
     </div>
   ):
+    
     <div className="weather-data">
         <p className="city">{weatherData.name}</p>
-        <p className="temp">{Math.round(weatherData.main.temp)}°F</p>
+        <p className="temp">{Math.round(weatherData.main.temp)}°C</p>
         <p className="weather">{weatherData.weather[0].main}</p>
 
     </div>

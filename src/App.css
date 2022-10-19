@@ -59,7 +59,7 @@ margin-top: 3rem;
 
 body{
   background-image: url( '../src/images/weatherbackground.svg' );
- 
+  background-repeat: no-repeat;
   background-size: cover;
  
  
@@ -77,4 +77,11 @@ body{
   
 }
 
+@media (min-width:200px) {
+body{
+  background-size: cover;
+  min-height:100vh;
+}
+  
+}
 
