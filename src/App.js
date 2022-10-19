@@ -40,7 +40,7 @@ function App() {
     
     <div className="weather-data">
         <p className="city">{weatherData.name}</p>
-        <p className="temp">{Math.round(weatherData.main.temp)}°C</p>
+        <p className="temp">{Math.round(weatherData.main.temp)}°F</p>
         <p className="weather">{weatherData.weather[0].main}</p>
 
     </div>
